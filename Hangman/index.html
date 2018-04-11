@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Hangman | Orcadito</title>
+	<link rel="stylesheet" href="css/estilo.css">
+
+	<!--Se llama JQuery antes de llamar el js de codigo -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/modelo.js"></script>
+	<script src="js/logic.js"></script>
+</head>
+<body>
+	<img src="assets/logo.png" alt="nombre" class="centrar">
+
+	<div class="row">
+
+		<div id="alfabeto">
+			<div class="letras">A</div>
+			<div class="letras">B</div>
+			<div class="letras">C</div>
+			<div class="letras">D</div>
+			<div class="letras">E</div>
+			<div class="letras">F</div>
+			<div class="letras">G</div>
+			<div class="letras">H</div>
+			<div class="letras">I</div>
+			<div class="letras">J</div>
+			<div class="letras">K</div>
+			<div class="letras">L</div>
+			<div class="letras">M</div>
+			<div class="letras">N</div>
+			<div class="letras">Ñ</div>
+			<div class="letras">O</div>
+			<div class="letras">P</div>
+			<div class="letras">Q</div>
+			<div class="letras">R</div>
+			<div class="letras">S</div>
+			<div class="letras">T</div>
+			<div class="letras">U</div>
+			<div class="letras">V</div>
+			<div class="letras">W</div>
+			<div class="letras">X</div>
+			<div class="letras">Y</div>
+			<div class="letras">Z</div>
+		</div>
+
+	</div>  
+
+	<!-- <div id="letras_falladas">
+		<h2>FALLAS</h2>
+	</div> -->
+
+	<div class="row">
+		<canvas id="HangmanCanvas"></canvas>
+		<br>
+		<div id="palabra_en_juego"></div>
+	</div>
+
+	<input type="button" class="btn" value="Reiniciar" onClick="window.location.reload()">
+
+
+<!-- 	<div class="modal fade" id="Victoria" role="dialog" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">VICTORIA!</h4>
+          </div>
+          <div class="modal-body">
+            <h5>UY! Has ganado la partida.</h5>
+          </div>
+          <div class="modal-footer">
+            <button class="btn reset" data-dismiss="modal"> Reiniciar </button>
+          </div>
+        </div>
+      </div>
+	</div>
+-->
+	<!-- <div class="modal fade" id="Perdio" role="dialog" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">DERROTA!</h4>
+          </div>
+          <div class="modal-body">
+            <h5>Has sido EJECUTADO.</h5>
+          </div>
+          <div class="modal-footer">
+            <button class="btn reset" data-dismiss="modal"> Reiniciar </button>
+          </div>
+        </div>
+      </div>
+  </div> -->
+
+</body>
+</html>
